@@ -28,7 +28,7 @@ class ProgressRepository {
       final m = Map<String, dynamic>.from(e as Map);
       return {
         'topic_id': parseJsonInt(m['topic_id']) ?? 0,
-        'topic_name': '${m['topic_name'] ?? 'Chưa có tên chủ đề'}'.trim(),
+        'topic_name': '${m['topic_name'] ?? ''}',
         'vocab_total': parseJsonInt(m['vocab_total']) ?? 0,
         'vocab_mastered': parseJsonInt(m['vocab_mastered']) ?? 0,
         'vocab_progress_pct':
